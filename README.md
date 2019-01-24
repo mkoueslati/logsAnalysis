@@ -18,6 +18,5 @@ ReportingTool is a Flask app done in the fullstack nanodegree of UDACITY, it's a
 None
 ### Future Plans
 Make the project bigger and more competitive
-### Contribution guidelines
 ### License
 The content of this repository is licensed under a [Creative Commons Attribution License](https://creativecommons.org/licenses/by/3.0/us/)
