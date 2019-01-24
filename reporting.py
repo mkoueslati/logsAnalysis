@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#! /usr/bin/env python
 from flask import Flask, request, redirect, url_for, Response
 from logsAnalysisDB import *
 from string import Template
