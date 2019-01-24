@@ -19,7 +19,6 @@ def most_popular_articles():
     result = c.fetchall()
     db.close()
     return result
-    
 
 
 def most_popular_authors_articles():
@@ -65,15 +64,15 @@ def connect(database_name="news"):
         print("<error message>")
 
 if __name__ == '__main__':
-  popular_articles = most_popular_articles()
-  popular_authors = most_popular_authors_articles()
-  errors = errors_more_than_1_per_cent_by_day()
-  for p_art in popular_articles:
-    print ("{} --- {} views".format(p_art[0] , p_art[1]))
-  for p_auth in popular_authors:
-    print ("{} --- {} views".format(p_auth[0] , p_auth[1]))
-  for p_err in errors:
-    print ("{} --- {} views".format(p_err[0] , p_err[1]))
+    popular_articles = most_popular_articles()
+    popular_authors = most_popular_authors_articles()
+    errors = errors_more_than_1_per_cent_by_day()
+    for p_art in popular_articles:
+        print ("{} --- {} views".format(p_art[0], p_art[1]))
+    for p_auth in popular_authors:
+        print ("{} --- {} views".format(p_auth[0], p_auth[1]))
+    for p_err in errors:
+        print ("{} --- {} views".format(p_err[0], p_err[1]))
 
 
 def to_short_date(date):
